@@ -4,7 +4,7 @@ Website tĩnh giới thiệu các mẫu ô tô, cung cấp thông tin cấu hìn
 
 ## 🔗 Live Preview
 
-**[Xem website trực tiếp trên GitHub Pages](https://overthinking123.github.io/MinhAnh_NguyenDo_125002511/)**
+**(https://vercel.com/overthinking123/minhanhnguyendo125002511)**
 
 > Nếu website chưa được triển khai, hãy bật GitHub Pages trong `Settings → Pages` trước khi sử dụng liên kết này.
 
