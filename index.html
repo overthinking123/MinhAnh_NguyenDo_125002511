@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AUTO VIỆT - showroom ô tô trực tuyến. Khám phá mẫu xe, chọn màu sắc, phiên bản và gửi yêu cầu đặt mua.">
+  <title>AUTO VIỆT | Showroom ô tô trực tuyến</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="AUTO VIỆT - Trang chủ">
+        <span class="brand-mark" aria-hidden="true">AV</span>
+        <span class="brand-copy"><strong>AUTO VIỆT</strong><small>DRIVE YOUR WAY</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Điều hướng chính">
+        <a class="nav-link active" href="#top">Trang chủ</a>
+        <a class="nav-link" href="#vehicles">Dòng xe</a>
+        <a class="nav-link" href="#why-us">Về chúng tôi</a>
+        <a class="nav-link" href="#contact">Liên hệ</a>
+        <button class="cart-nav" id="openCart" aria-label="Mở giỏ hàng">Giỏ hàng <span id="cartCount">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow animate__animated animate__fadeInUp">SHOWROOM Ô TÔ TRỰC TUYẾN</p>
+        <h1 class="animate__animated animate__fadeInUp">Chọn chiếc xe.<br><span>Khởi đầu hành trình.</span></h1>
+        <p class="hero-description animate__animated animate__fadeInUp">Khám phá những mẫu xe nổi bật, tùy chọn màu sắc và phiên bản phù hợp với phong cách của bạn.</p>
+        <div class="hero-actions animate__animated animate__fadeInUp">
+          <a class="btn btn-primary" href="#vehicles">Khám phá dòng xe <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="#why-us">Tại sao chọn chúng tôi?</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12+</strong><span>Mẫu xe nổi bật</span></div>
+          <div><strong>24/7</strong><span>Tư vấn trực tuyến</span></div>
+          <div><strong>100%</strong><span>Minh bạch thông tin</span></div>
+        </div>
+      </div>
+      <div class="hero-label">AUTO VIỆT / EST. 2026</div>
+    </section>
+
+    <section class="trust-strip" aria-label="Cam kết dịch vụ">
+      <div class="container trust-grid">
+        <div><span class="trust-icon">✦</span><span>Thông tin rõ ràng</span></div>
+        <div><span class="trust-icon">⌁</span><span>Tư vấn tận tâm</span></div>
+        <div><span class="trust-icon">◈</span><span>Hỗ trợ chọn phiên bản</span></div>
+        <div><span class="trust-icon">✓</span><span>Quy trình đặt xe đơn giản</span></div>
+      </div>
+    </section>
+
+    <section class="section vehicles-section" id="vehicles">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div><p class="eyebrow">BỘ SƯU TẬP CỦA CHÚNG TÔI</p><h2>Tìm chiếc xe <span>của bạn</span></h2></div>
+          <p class="section-intro">Nhấn biểu tượng ↻ trên ảnh để lật thẻ xem thông số. Nhấn “Xem chi tiết” để chọn màu và phiên bản.</p>
+        </div>
+        <div class="catalog-toolbar" data-aos="fade-up">
+          <div class="filter-tabs" role="group" aria-label="Lọc dòng xe">
+            <button class="filter-btn active" data-filter="all">Tất cả xe</button>
+            <button class="filter-btn" data-filter="suv">SUV</button>
+            <button class="filter-btn" data-filter="sedan">Sedan</button>
+            <button class="filter-btn" data-filter="electric">Xe điện</button>
+            <button class="filter-btn" data-filter="sport">Thể thao</button>
+          </div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="vehicleSearch" placeholder="Tìm tên xe..." aria-label="Tìm tên xe"></label>
+        </div>
+        <div class="catalog-note"><span class="flip-symbol">↻</span> Nhấn “Xem chi tiết” để lật thẻ sản phẩm</div>
+        <div class="vehicle-grid" id="vehicleGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="feature-banner" id="why-us">
+      <div class="container feature-layout">
+        <div class="feature-copy" data-aos="fade-right">
+          <p class="eyebrow">TRẢI NGHIỆM MUA XE DỄ DÀNG</p>
+          <h2>Thông tin rõ ràng.<br><span>Lựa chọn tự tin.</span></h2>
+          <p>AUTO VIỆT giúp bạn khám phá thông tin mẫu xe, so sánh phiên bản và gửi yêu cầu tư vấn ngay trên một giao diện trực quan.</p>
+          <ul class="feature-list">
+            <li><span>01</span><div><strong>Tùy chọn linh hoạt</strong><small>Chọn màu ngoại thất và phiên bản xe.</small></div></li>
+            <li><span>02</span><div><strong>Giỏ xe dễ quản lý</strong><small>Điều chỉnh số lượng hoặc xóa mẫu xe trong giỏ.</small></div></li>
+            <li><span>03</span><div><strong>Đặt yêu cầu trực tuyến</strong><small>Gửi thông tin liên hệ để nhân viên tư vấn.</small></div></li>
+          </ul>
+        </div>
+        <div class="feature-card" data-aos="fade-left">
+          <div class="feature-card-top"><span>AV / SERVICE</span><span class="status-dot">ĐANG HỖ TRỢ</span></div>
+          <div class="feature-car-icon" aria-hidden="true">✧</div>
+          <p class="feature-quote">“Chiếc xe phù hợp không chỉ đưa bạn đến nơi cần đến, mà còn khiến hành trình trở nên đáng nhớ.”</p>
+          <div class="feature-signature">AUTO VIỆT <span>— ĐỒNG HÀNH CÙNG BẠN</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps-section">
+      <div class="container">
+        <div class="section-heading centered" data-aos="fade-up"><div><p class="eyebrow">QUY TRÌNH ĐƠN GIẢN</p><h2>Ba bước đến gần <span>chiếc xe mơ ước</span></h2></div></div>
+        <div class="steps-grid">
+          <article class="step-card" data-aos="fade-up"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Khám phá</h3><p>Duyệt danh mục, lọc dòng xe và xem thông số chi tiết.</p></article>
+          <article class="step-card" data-aos="fade-up" data-aos-delay="100"><span class="step-number">02</span><div class="step-icon">◉</div><h3>Tùy chọn</h3><p>Chọn màu sắc, phiên bản và thêm mẫu xe vào giỏ.</p></article>
+          <article class="step-card" data-aos="fade-up" data-aos-delay="200"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Gửi yêu cầu</h3><p>Điền thông tin liên hệ để nhận tư vấn về xe đã chọn.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-layout">
+        <div data-aos="fade-right"><p class="eyebrow">BẠN ĐANG TÌM KIẾM ĐIỀU GÌ?</p><h2>Hãy để chúng tôi<br><span>giúp bạn chọn xe.</span></h2><p class="contact-desc">Gửi lời nhắn cho AUTO VIỆT. Đội ngũ tư vấn sẽ hỗ trợ bạn tìm hiểu mẫu xe phù hợp.</p></div>
+        <form class="contact-form" id="contactForm" data-aos="fade-left">
+          <label>Họ và tên<input name="name" required placeholder="Nhập họ tên của bạn"></label>
+          <label>Email<input name="email" type="email" required placeholder="name@example.com"></label>
+          <label>Bạn quan tâm đến<textarea name="message" rows="3" required placeholder="Tên mẫu xe hoặc nhu cầu của bạn"></textarea></label>
+          <button class="btn btn-primary" type="submit">Gửi yêu cầu <span>↗</span></button>
+          <p class="form-note">Đây là website mô phỏng phục vụ học tập; biểu mẫu không gửi dữ liệu đến máy chủ.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main" data-aos="fade-up">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark">AV</span><span class="brand-copy"><strong>AUTO VIỆT</strong><small>DRIVE YOUR WAY</small></span></a>
+      <p>Khám phá hành trình mới của bạn cùng AUTO VIỆT.</p>
+      <a href="#top" class="back-top">Lên đầu trang ↑</a>
+    </div>
+    <div class="container footer-bottom" data-aos="fade-up"><span>© 2026 AUTO VIỆT. Dự án website học tập.</span><span>HTML5 · CSS3 · JavaScript</span></div>
+  </footer>
+
+  <div class="modal-backdrop" id="vehicleDetailModal" aria-hidden="true">
+    <section class="modal-panel vehicle-detail-panel" role="dialog" aria-modal="true" aria-labelledby="vehicleDetailTitle">
+      <div class="modal-header"><div><p class="eyebrow">EXPLORE YOUR NEXT DRIVE</p><h2 id="vehicleDetailTitle">Chi tiết xe & cấu hình</h2></div><button class="icon-close" data-close="vehicleDetailModal" aria-label="Đóng chi tiết xe">×</button></div>
+      <div id="vehicleDetailContent"></div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="cartModal" aria-hidden="true">
+    <section class="modal-panel cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="modal-header"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Giỏ xe <span id="cartSubtitle">(0)</span></h2></div><button class="icon-close" data-close="cartModal" aria-label="Đóng giỏ hàng">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer"><div class="cart-total"><span>Tổng giá tham khảo</span><strong id="cartTotal">0 ₫</strong></div><p class="form-note">Giá chỉ mang tính tham khảo, chưa phải báo giá hay giao dịch mua bán thực tế.</p><button class="btn btn-primary btn-full" id="checkoutButton">Tiếp tục đặt mua <span>↗</span></button></div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+    <section class="modal-panel checkout-panel" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <div class="modal-header"><div><p class="eyebrow">REQUEST A CONSULTATION</p><h2 id="checkoutTitle">Đặt mua / tư vấn</h2></div><button class="icon-close" data-close="checkoutModal" aria-label="Đóng biểu mẫu">×</button></div>
+      <p class="checkout-lead">Điền thông tin bên dưới để tạo yêu cầu tư vấn cho các mẫu xe trong giỏ hàng.</p>
+      <form id="checkoutForm" class="checkout-form">
+        <label>Họ và tên<input name="customerName" required autocomplete="name" placeholder="Nguyễn Văn A"></label>
+        <div class="form-two-col"><label>Số điện thoại<input name="phone" required type="tel" pattern="[0-9+() .-]{9,18}" placeholder="09xx xxx xxx"></label><label>Email<input name="customerEmail" required type="email" placeholder="name@example.com"></label></div>
+        <label>Hình thức liên hệ<select name="contactMethod"><option>Điện thoại</option><option>Email</option><option>Zalo</option></select></label>
+        <label>Ghi chú<textarea name="note" rows="3" placeholder="Thời gian mong muốn được liên hệ..."></textarea></label>
+        <div class="checkout-summary" id="checkoutSummary"></div>
+        <button class="btn btn-primary btn-full" type="submit">Xác nhận yêu cầu <span>↗</span></button>
+        <p class="form-note">Mô phỏng học tập: không thu tiền, không tạo đơn hàng thật và không gửi dữ liệu ra ngoài trình duyệt.</p>
+      </form>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
