@@ -4,7 +4,7 @@ Website tĩnh giới thiệu các mẫu ô tô, cung cấp thông tin cấu hìn
 
 ## 🔗 Live Preview
 
-**(https://vercel.com/overthinking123/minhanhnguyendo125002511)**
+**https://minhanhnguyendo125002511.vercel.app/**
 
 > Nếu website chưa được triển khai, hãy bật GitHub Pages trong `Settings → Pages` trước khi sử dụng liên kết này.
 
